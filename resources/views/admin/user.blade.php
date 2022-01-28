@@ -37,7 +37,7 @@
                                 <td>{{ $user->birth }}</td>
                                 <td>{{ $user->freebies_count }}</td>
                                 <td>{{ $user->is_admin ? 'YES' : 'NO' }}</td>
-                                <td><a href="{{ route('admin.user.show', ['id' => $user->id]) }}"><i class="fa fa-eye text-success"></i></a></td>
+                                <td><a href="#"><i class="fa fa-eye text-success"></i></a></td>
                                 <td>
                                     <form action="{{ route('admin.user.delete', ['id' => $user->id]) }}" method="POST" >
                                     @csrf

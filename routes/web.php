@@ -30,6 +30,8 @@ Route::middleware(['auth'])->group(function() {
         Route::get('/users', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('admin.user');
         Route::get('/users/{id}', [App\Http\Controllers\Admin\UserController::class, 'show'])->name('admin.user.show');
         Route::post('/users/{id}/delete', [App\Http\Controllers\Admin\UserController::class, 'delete'])->name('admin.user.delete');
+
+        Route::get('/categories', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('admin.categories');
     });
 });
 
